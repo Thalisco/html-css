@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com html5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu proprio servidor.</p>
+    <video width="250" poster="imagens/limoes-capa.png" controls autoplay loop>
+        <source src="midia/Video-Gato-editado.mp4" type="video/mp4">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+    <!--colocar todos os arquivos de video (mp4-/mp4, m4v-/mp4, webm-/webm, ogv-/ogg), para ter compatibilidade com os demais navegadores-->
+    <!--tag <video> pesa mt o site, consumindo mais banda, possivelmente encarecendo a manutenção do site do cliente-->
+
+        <h1>Inserindo videos do Youtube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=3SRaHs8oIe-GlwcR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        <h1>Inserindo videos do Vimeo</h1>
+        <iframe src="https://player.vimeo.com/video/71127606?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Animation Reel 2022"></iframe>
+        <!--recomendado para não consumir dados do servidor, e sim do youtube-->
+        <!--Vimeo é pago, mas é utilizado de forma profissional (tbm n aparece outros videos como no YT)
+        No YT, qualquer um pode achar e compartilhar o seu video-->
+</body>
+</html>

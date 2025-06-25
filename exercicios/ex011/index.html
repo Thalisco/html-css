@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-g.png" alt="foto flexivel"> <!--tem que ser nessa ordem, ou não ira aparecer a menor imagem-->
+    </picture>
+
+    <h1>Reproduzir Audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop> 
+        <source src="midia/land-of-loss.mp3" type="audio/mpeg"> 
+        <!--**Se colocado aq outros formatos de audio, ele tentará carregar em cascata os tipos de audio (se compativel)**-->
+        <!--em caso de mp3 deve ser usado .mpeg, os demais é utilizado .(tipo de arquivo)-->
+    </audio>
+    <!--formatos de audio: MP3 WMV OGG WAV(mt pesados porem em otima qualidade, evitar usar)-->
+</body>
+</html>

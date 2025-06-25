@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/*arquivo de estilo do errado*/
+@font-face {
+    font-family: "idroid";
+    src: url('fontes/idroid.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(118, 217, 202, 0.732), rgb(2, 77, 2))
+}
+
+.menu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
+body {
+    background-color: rgba(127, 255, 172, 0.815);
+}
+
+main {
+    background-color: white;
+    box-shadow: 5px 5px 15px #2c2c2c;
+    width: auto;
+    padding: 10px;
+    margin: auto;
+}
+
+p {
+    text-indent: 20px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.android {
+    font-family: 'idroid', Arial, Helvetica, sans-serif;
+}
+
+.tabelatopo {
+    background-color: green;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tabela {
+    background-color: lightgreen;
+}
